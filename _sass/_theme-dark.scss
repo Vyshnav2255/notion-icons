@@ -1,0 +1,85 @@
+$dark-100: $dark;
+$dark-300: #2c3032;
+$dark-600: #242526;
+$dark-900: #121212;
+
+[data-theme="dark"] {
+  body {
+    background-color: $dark-900;
+    color: $text-white;
+  }
+
+  // Inputs
+  input {
+    background-color: $dark-300;
+    border-color: $dark-100;
+    color: $dark-900;
+
+    &::placeholder {
+      color: rgba($text-white, 0.64);
+    }
+
+    &:focus {
+      background-color: $dark-600;
+      color: $text-white;
+    }
+  }
+ 
+.branding{
+    path{
+      fill: white;
+    }
+}
+
+.text-muted{
+  color: rgba(235,240,251,0.85) !important;
+}
+
+.social{
+  color: #ebf0fbd9 !important;
+}
+
+.nav-item{
+  color: rgba(235,240,251,0.85) !important;
+}
+.article{
+
+  a:not(.btn):not([class^="carousel-"]):not([class^="list-"]):not(.no-underline):not(.account):not(.tweet-icon):not(.tweet-foot):not(.nav-item){
+    color: #000201 !important;
+    text-decoration-color: #89ffdeb7 !important;
+  }
+
+  .social-icon{
+    fill: #ebf0fbd9 !important;
+    &:hover{
+      fill: #43d6b5 !important;
+  }
+  }
+  .icon-svg-themed{
+    fill: #ffffff !important;
+}
+}
+.item{
+  background-color: #272727 !important;
+  border: 1px solid #c7caced2 !important;
+}
+.btn{
+  background-color: #452981 !important;
+  border-color: #e4c6fa !important;
+  color: #e4c6fa !important;
+
+  svg{
+    fill: #e4c6fa !important;
+  }
+}
+
+.badge {
+  background-color: #452981;
+  color: #e4c6fa;
+
+  &:hover{
+    background-color: #a56de2;
+    }
+  }
+
+}

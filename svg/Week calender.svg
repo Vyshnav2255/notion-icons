@@ -1,0 +1,7 @@
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.5" d="M31.25 50H118.75V37.5H31.25V50Z" fill="#F50057" fill-opacity="0.54"/>
+<path d="M43.75 68.75H56.25V81.25H43.75V68.75Z" fill="#F50057" fill-opacity="0.54"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M118.75 25H112.5V12.5H100V25H50V12.5H37.5V25H31.25C24.3125 25 18.8125 30.625 18.8125 37.5L18.75 125C18.75 131.875 24.3125 137.5 31.25 137.5H118.75C125.625 137.5 131.25 131.875 131.25 125V37.5C131.25 30.625 125.625 25 118.75 25ZM118.75 125H31.25V62.5H118.75V125ZM31.25 50H118.75V37.5H31.25V50Z" fill="#F50057" fill-opacity="0.54"/>
+<path d="M93.75 68.75H106.25V81.25H93.75V68.75Z" fill="#F50057" fill-opacity="0.54"/>
+<path d="M68.75 68.75H81.25V81.25H68.75V68.75Z" fill="#F50057" fill-opacity="0.54"/>
+</svg>

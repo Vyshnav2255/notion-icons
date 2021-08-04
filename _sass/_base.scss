@@ -1,0 +1,94 @@
+body {
+    font-family: 'Sen', sans-serif;
+}
+
+#container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+#dummy {
+    padding-top: 100%;
+}
+
+#element {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+// Footer
+.social {
+    text-decoration: none !important;
+}
+
+
+.btn{
+    margin-bottom: 8px;
+    border-radius: 0 0 .25rem .25rem;
+    background-color: #e4c6fa;
+    border-color: #452981;
+    color: #452981;
+    cursor: pointer;
+    width: 100%;
+
+    svg{
+        fill: #452981;
+      }
+
+    }
+    :hover.btn{
+        background-color: #cd9ef7 !important;
+        }
+
+.navbar-light .navbar-nav .nav-link{
+    color: #4d4d4d;
+}
+
+.branding {
+    display: inline;
+}
+
+.col-lg-10{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.text-center {
+    text-align: center !important;
+   }
+
+.social-icon{
+    fill: #575858;
+
+    &:hover{
+        fill: #a56de2;
+    }
+}
+
+.icon-svg-themed{
+    fill: #343a40;
+}
+
+small{
+    font-size: 80%;
+    font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.badge {
+    font-weight: 500;
+    background-color: #e4c6fa;
+    color: #452981;
+    font-size: 85%;
+
+    &:hover{
+        background-color: #a56de2;
+        }
+}

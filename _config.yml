@@ -1,0 +1,45 @@
+### Site Settings ###
+title               : Notion Icons 2.0
+description         : >-                               # >- means to ignore newlines until "url:"
+                      Create a more vibrant and modern workspace.
+
+url                 : "https://notionv2.netlify.app/"                               # base hostname & protocol for your site (e.g. http://example.com)
+baseurl             : ""                    # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
+repository          : Vyshnav2255/notion-icons-v2
+
+### Author Info ###
+author:
+  name              : Vyshnav Gangadharan
+  twitter           : vyshnav_xyz
+  dribbble          : vyshnav_
+  github            : Vyshnav2255
+  instagram         : vyshnavgangadharan
+
+
+### Collections ###
+collections:
+  icons:
+    output: true
+    permalink: /icons/:name
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "icons"
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-admin
+
+sass:
+    style: compressed
+
+### Exclude from processing ###
+exclude:
+- README.md
+- CONTRIBUTING.md
+- LICENSE
+- Gemfile
+- Gemfile.lock

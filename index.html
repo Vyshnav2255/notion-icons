@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+{% include search.html %}
+{% include filter.html %}
+  <div class="p-3">
+    <ul class="row row-cols-3 row-cols-sm-4 row-cols-lg-6 row-cols-xl-8 list-unstyled list">
+        {% assign iconss = site.icons | sort: 'title'  %}
+        {% for icon in iconss %}
+      <li class="col mb-4" data-tags="alarm clock" data-categories="devices">
+        <a class="item d-block p-1 text-dark text-decoration-none" href="{{ icon.image }}">
+          <div class="ico mb-2 text-center rounded">
+           <img class="icon-preview p-2" style="height: 5em; width: 5em;" src="{{ icon.image }}" alt="{{ icon.title }}"/>
+          </div>
+        </a>
+        <button class="btn cpybtn text-break name" style="margin-top: -3px;" data-clipboard-text="{{ icon.image | prepend: site.baseurl | prepend: site.url }}" data-toggle="tooltip" data-placement="bottom" data-original-title="Click to Copy">{{ icon.title }}</button>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <script src="/assets/dist/clipboard.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script>
+    var clipboard = new ClipboardJS('.cpybtn');
+
+    clipboard.on('success', function (e) {
+      console.log(e);
+    });
+
+    clipboard.on('error', function (e) {
+      console.log(e);
+    });
+  </script>
