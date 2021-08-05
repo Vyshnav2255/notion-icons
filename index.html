@@ -8,13 +8,13 @@ layout: default
     <ul class="row row-cols-3 row-cols-sm-4 row-cols-lg-6 row-cols-xl-8 list-unstyled list">
         {% assign iconss = site.icons | sort: 'title'  %}
         {% for icon in iconss %}
-      <li class="col mb-4" data-tags="alarm clock" data-categories="devices">
-        <a class="item d-block p-1 text-dark text-decoration-none" href="{{ icon.image }}">
+      <li class="col mb-4">
+        <div class="item d-block p-1 text-dark text-decoration-none" href="{{ icon.image }}">
           <div class="ico mb-2 text-center rounded">
            <img class="icon-preview p-2" style="height: 5em; width: 5em;" src="{{ icon.image }}" alt="{{ icon.title }}"/>
           </div>
-        </a>
-        <button class="btn cpybtn text-break name" style="margin-top: -3px;" data-clipboard-text="{{ icon.image | prepend: site.baseurl | prepend: site.url }}" data-toggle="tooltip" data-placement="bottom" data-original-title="Click to Copy">{{ icon.title }}</button>
+        </div>
+        <button class="btn cpybtn text-break name" style="margin-top: -3px; width: 100%; border-radius: 0 0 .25rem .25rem;" data-clipboard-text="{{ icon.image | prepend: site.baseurl | prepend: site.url }}" data-toggle="tooltip" data-placement="bottom" data-original-title="Click to Copy">{{ icon.title }}</button>
       </li>
       {% endfor %}
     </ul>

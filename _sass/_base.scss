@@ -28,12 +28,10 @@ body {
 
 .btn{
     margin-bottom: 8px;
-    border-radius: 0 0 .25rem .25rem;
     background-color: #e4c6fa;
     border-color: #452981;
     color: #452981;
     cursor: pointer;
-    width: 100%;
 
     svg{
         fill: #452981;
@@ -91,4 +89,9 @@ small{
     &:hover{
         background-color: #a56de2;
         }
+}
+
+.intro{
+    padding-bottom: 90px;
+    padding-top: 90px;
 }
