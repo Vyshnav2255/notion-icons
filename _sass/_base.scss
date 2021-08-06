@@ -92,6 +92,21 @@ small{
 }
 
 .intro{
-    padding-bottom: 90px;
-    padding-top: 90px;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.links{
+    color: #452981;
+
+    svg{
+        fill: #452981;
+    }
+
+    &:hover{
+        color: #452981;
+        text-decoration: underline;
+        text-decoration-color: #452981;
+        text-decoration-thickness: 2px;
+    }
 }

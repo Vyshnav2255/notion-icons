@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+{% include intro.html %}
 {% include search.html %}
 {% include filter.html %}
   <div class="p-3">
@@ -9,11 +9,11 @@ layout: default
         {% assign iconss = site.icons | sort: 'title'  %}
         {% for icon in iconss %}
       <li class="col mb-4">
-        <div class="item d-block p-1 text-dark text-decoration-none" href="{{ icon.image }}">
+        <a class="item d-block p-1 text-dark text-decoration-none" href="{{ icon.url }}">
           <div class="ico mb-2 text-center rounded">
            <img class="icon-preview p-2" style="height: 5em; width: 5em;" src="{{ icon.image }}" alt="{{ icon.title }}"/>
           </div>
-        </div>
+        </a>
         <button class="btn cpybtn text-break name" style="margin-top: -3px; width: 100%; border-radius: 0 0 .25rem .25rem;" data-clipboard-text="{{ icon.image | prepend: site.baseurl | prepend: site.url }}" data-toggle="tooltip" data-placement="bottom" data-original-title="Click to Copy">{{ icon.title }}</button>
       </li>
       {% endfor %}
@@ -27,6 +27,11 @@ layout: default
 
     clipboard.on('success', function (e) {
       console.log(e);
+      $(e.trigger).text("Copied!");
+      e.clearSelection();
+      setTimeout(function() {
+      $(e.trigger).text("Copy");
+    }, 2500);
     });
 
     clipboard.on('error', function (e) {

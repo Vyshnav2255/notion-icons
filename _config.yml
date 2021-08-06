@@ -10,10 +10,11 @@ repository          : Vyshnav2255/notion-icons-v2
 ### Author Info ###
 author:
   name              : Vyshnav Gangadharan
+  website           : vyshnav.xyz
   twitter           : vyshnav_xyz
   dribbble          : vyshnav_
   github            : Vyshnav2255
-  instagram         : vyshnavgangadharan
+
 
 
 ### Collections ###
@@ -28,7 +29,7 @@ defaults:
       path: ""
       type: "icons"
     values:
-      layout: "default"
+      layout: "icon"
 
 plugins:
   - jekyll-admin

@@ -7,7 +7,7 @@ permalink: /search.json
     {
       "title"    : "{{ icon.title | escape }}",
       "tags"     : "{{ icon.tags | join: ', ' }}",
-      "url"      : "{{ icon.image | relative_url }}"
+      "url"      : "{{ icon.url | relative_url }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

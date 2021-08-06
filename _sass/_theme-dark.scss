@@ -37,6 +37,10 @@ $dark-900: #121212;
 
 .social{
   color: #ebf0fbd9 !important;
+
+  svg{
+   fill: #ebf0fbd9 !important;
+  }
 }
 
 .nav-item{
@@ -79,6 +83,17 @@ $dark-900: #121212;
 
   &:hover{
     background-color: #a56de2;
+    }
+  }
+
+  .links{
+    color: #e4c6fa;
+
+    svg{
+        fill: #e4c6fa;
+    }
+    &:hover{
+      text-decoration-color: #e4c6fa;
     }
   }
 
