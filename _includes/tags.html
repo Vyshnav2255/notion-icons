@@ -17,7 +17,7 @@
     {% for icon in iconss %}
     {%- if icon.tags contains tag -%}
     <li class="col mb-4">
-      <a class="item d-block p-1 text-dark text-decoration-none" href="{{ icon.image }}">
+      <a class="item d-block p-1 text-dark text-decoration-none" href="{{ icon.url }}">
         <div class="ico mb-2 text-center rounded">
          <img class="icon-preview p-2" style="height: 5em; width: 5em;" src="{{ icon.image }}" alt="{{ icon.title }}"/>
         </div>

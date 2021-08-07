@@ -1,5 +1,5 @@
 ---
 title: Controller
 image: /svg/Controller.svg
-tag: Game
+tag: Object
 ---
