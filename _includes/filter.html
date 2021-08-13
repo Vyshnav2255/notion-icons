@@ -9,12 +9,12 @@
 {%- assign tags = tags | split:'|' | uniq | sort -%}
 
 <!-- List tags & related posts -->
-<div class="p-3" style="display: flex; flex-wrap: wrap;">
-  <a class="text-decoration-none no-underline tag-item" href="/">
+<div class="p-3 button-group filter-button-group" style="display: flex; flex-wrap: wrap;">
+  <a class="button text-decoration-none no-underline tag-item" style="cursor: pointer;" data-filter="*">
     <span class="tag badge badge-pill">All</span>
   </a>
   {% for tag in tags %}
-  <a class="text-decoration-none no-underline tag-item" href="{{ tag | slugify | prepend:'/tags#' | relative_url }}">
+  <a class="button text-decoration-none no-underline tag-item" style="cursor: pointer;" data-filter=".{{ tag }}">
     <span class="tag badge badge-pill">{{ tag }}</span>
   </a>
   {% endfor %}

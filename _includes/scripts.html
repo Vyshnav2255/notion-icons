@@ -20,3 +20,19 @@ $(function () {
 
   gtag('config', 'UA-142301295-4');
 </script>
+
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+<script>
+  var $grid = $('.grid').isotope({});
+  
+  $('.filter-button-group').on( 'click', 'a', function() {
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+   });
+   $('.button-group a.button').on('click', function(){
+      $('.button-group a.button').removeClass('active');
+      $(this).addClass('active');
+   });
+</script>
