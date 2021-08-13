@@ -27,7 +27,7 @@ layout: default
 
     clipboard.on('success', function (e) {
       console.log(e);
-      $(e.trigger).text("Copied!");
+      $(e.trigger).text("✅ Copied!");
       e.clearSelection();
       setTimeout(function() {
       $(e.trigger).text("Copy");
