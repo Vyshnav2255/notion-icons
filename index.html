@@ -5,7 +5,7 @@ layout: default
 {% include search.html %}
 {% include filter.html %}
   <div class="p-3">
-    <ul class="row row-cols-3 row-cols-sm-4 row-cols-lg-6 row-cols-xl-8 list-unstyled list grid">
+    <ul class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 row-cols-xl-8 list-unstyled list grid">
         {% assign iconss = site.icons | sort: 'title'  %}
         {% for icon in iconss %}
       <li class="col mb-4 {{ icon.tag }}">
