@@ -7,7 +7,7 @@ title: Other Icon Packs
 ## Other Icon Packs
 ---
 
-### Notion Prism Icons
+### **Notion Prism Icons**
 ![1](/images/other/18.png)
 The only icon pack you will ever need. The pack contains 1220 icons. A single icon is available in 20 Different Colors. The icons are Dark Mode Compatible.
 
@@ -17,7 +17,7 @@ The only icon pack you will ever need. The pack contains 1220 icons. A single ic
 
 ---
 
-### Notion Palette Icons
+### **Notion Palette Icons**
 ![1](/images/other/23.png)
 A simple icon pack that matches your workspace, contains 549 icons in 9 Different Colors and is Dark Mode Compatible
 
@@ -27,7 +27,7 @@ A simple icon pack that matches your workspace, contains 549 icons in 9 Differen
 
 ---
 
-### Notion Icons 4.0
+### **Notion Icons 4.0**
 ![1](/images/other/15.png)
 This is a modified version of my Notion Icons 2.0 pack. This pack is a minimal version of that pack. The pack contains 272 icons. As always, it supports both light and dark modes. 
 
